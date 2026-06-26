@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>My First Webpage</title>
-</head>
-<body>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: white;
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .card button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+      }
+
+      .card button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Welcome to My Website</h1>
+
     <p>This is a simple HTML page.</p>
+
     <button>Click Me</button>
-</body>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>This is the first simple card.</p>
+        <button>Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>This is the second simple card.</p>
+        <button>Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Card 3</h3>
+        <p>This is the third simple card.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </body>
 </html>
